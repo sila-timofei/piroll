@@ -1,0 +1,554 @@
+@charset "UTF-8";
+
+*,*::before,*::after{box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;-webkit-text-size-adjust:100%;}
+*[hidden]{display:none!important;}
+a,address,b,blockquote,body,button,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,hr,html,i,input,ins,legend,li,menu,ol,p,td,textarea,th,var,video,ul{margin:0;padding:0;outline:none;text-decoration:none;font-size:1em;font-style:normal;font-weight:inherit;font-family:inherit;text-align:inherit;color:inherit;}
+button,fieldset,hr,img,input,textarea{border:none;background-color:transparent;}
+button::-moz-focus-inner{border:0;}
+footer,header,main{display:block;}
+li{list-style:none;}
+
+html{height:100%;-webkit-tap-highlight-color:transparent;}
+body{text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
+body > svg{position:absolute;}
+svg,symbol{overflow:visible;fill:currentColor;}
+button{overflow:visible;}
+button,input,textarea{line-height:inherit;}
+b{font-weight:600;}
+p,
+ul,
+ol{margin:1em 0;}
+p:first-child,
+ul:first-child,
+ol:first-child{margin-top:0;}
+p:last-child,
+ul:last-child,
+ol:last-child{margin-bottom:0;}
+video,
+img{display: block;width:100%;max-width:100%;}
+*{transition: 0.3s;}
+
+body {
+    font-size: 14px;
+    font-family: "Arial, Helvetica, sans-serif";
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.first-screen {
+    background-color: #e9e9e9;
+    padding-bottom: 200px;
+    background-image: url(../img/first-screen-bg.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 60px center;
+}
+
+.row-first-screen {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.row-element-first-screen {
+    width: 50%;
+    margin-left: -30px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 38px;
+    font-family: 'Montseratt Medium';
+    margin-bottom: 30px;
+}
+
+.descr {
+    color: #787878;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Nunito Sans Regular';
+    margin: 0;
+    white-space: pre-line;
+}
+
+.descr-center,.title-center {
+    text-align: center;
+}
+
+.btn {
+    margin-top: 38px;
+    padding: 23px 46px;
+    background-color: #10c9c3;
+    color: white;
+    text-transform: uppercase;
+    margin-right: auto;
+    font-size: 12px;
+    font-family: 'Montseratt Medium';
+}
+
+
+
+.about-us {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.signature {
+    width: 223px;
+    height: 57px;
+    background-image: url(../img/icons/signature.png);
+    background-position: center;
+    background-position: no-repeat;
+    margin: auto;
+    margin-top: 36px;
+    margin-bottom: 100px;
+}
+
+
+
+.skills {
+    position: relative;
+    width: 100%;
+    background-color: #f8f9f9;
+    padding: 165px 0;
+}
+
+.skills::after {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: #e9e9e9;
+    background-image: url(../img/bg-skills.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+}
+
+.container-skills {
+    text-align: left;
+    max-width: 500px;
+}
+
+.name-skill {
+    font-size: 12px;
+    font-family: 'Montseratt Medium';
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.level-skill {
+    background-color: #d8d8d8;
+    height: 3px;
+    margin-bottom: 40px;
+}
+
+.line-progress-skill {
+    height: 3px;
+    background-color: #10c9c3;
+}
+
+.progress-skill-75 {
+    width: 75%;
+}
+
+.progress-skill-90 {
+    width: 90%;
+}
+
+.progress-skill-65 {
+    width: 60%;
+}
+
+
+
+.advantages {
+    padding: 100px 0;
+    background-color: #10c9c3;
+}
+
+.container-advantage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.advantage {
+    display: flex;
+    align-items: center;
+}
+
+.icon-advantage {
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 27px;
+}
+
+.icon-portfolio {
+    width: 40px;
+    height: 36px;
+    background-image: url(../img/icons/portfolio.png);
+}
+
+.icon-clock {
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/clock.png);
+}
+
+.icon-star {
+    width: 44px;
+    height: 41px;
+    background-image: url(../img/icons/star.png);
+}
+
+.icon-like {
+    width: 40px;
+    height: 36px;
+    background-image: url(../img/icons/like.png);
+}
+
+.number-advantage,.neme-advantage {
+    font-size: 18px;
+    font-family: 'Montseratt Medium';
+    color: white;
+    text-align: left;
+}
+
+.neme-advantage {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+
+.tiles-project {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
+    position: relative;
+    width: 25%;
+    background-color: #dddddd;
+}
+
+.hover-project {
+    padding-top: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: rgba(20, 20, 20, 0.85);
+    background-image: url(../img/icons/look.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+
+.hover-project:hover {
+    opacity: 1;
+}
+
+.project1 {
+    background-color: #e6e5e3;
+    background-image: url(../img/notebook.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.project2 {
+    background-color: #eeeeee;
+}
+
+.project3 {
+    background-color: #e1e1e1;
+}
+
+.project4 {
+    background-color: #efefef;
+}
+
+.project5 {
+    background-color: #dedfe4;
+}
+
+.project6 {
+    background-color: #d0d2de;
+}
+
+.project7 {
+    background-color: #e7e7e7;
+}
+
+.project8 {
+    background-color: #e4e3e1;
+}
+
+.btn-more {
+    display: block;
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    width: 100%;
+    text-align: center;
+    color: #8e8e8e;
+    font-size: 12px;
+    font-family: 'Montseratt Medium';
+    text-transform: uppercase;
+}
+
+
+
+.process {
+    padding-top: 100px;
+}
+
+.video {
+    position: relative;
+    height: 570px;
+    width: 100%;
+    background-color: #e9e9e9;
+    background-image: url(../img/cover-video.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 58px;
+    margin-bottom: 100px;
+}
+
+.btn-play {
+    position: absolute;
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    background-color: rgb(16, 201, 195);
+    background-image: url(../img/icons/arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 50%;
+    margin-top: -42.5px;
+    left: 50%;
+    margin-left: -42.5px;
+    box-shadow: 0 0 10px 0px rgba(20, 19, 19, .15);
+    cursor: pointer;
+}
+
+
+
+.competence {
+    background-color: #f5f5f5;
+    padding-top: 100px;
+    padding-bottom: 38px;
+}
+
+.wrap-competence {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-competence {
+    text-align: center;
+    width: 25%;
+    margin-bottom: 62px;
+}
+
+.icon-competence {
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    height: 46px;
+    margin-bottom: 26px;
+}
+
+.icon-diamond {
+    background-image: url(../img/icons/diamond.png);
+    width: 42px;
+}
+
+.icon-arc {
+    background-image: url(../img/icons/arc.png);
+    width: 40px;
+}
+
+.icon-phone {
+    background-image: url(../img/icons/phone.png);
+    width: 26px;
+}
+
+.icon-joy {
+    background-image: url(../img/icons/joy.png);
+    width: 44px;
+}
+
+.icon-plane {
+    background-image: url(../img/icons/plane.png);
+    width: 44px;
+}
+
+.icon-star-gray {
+    background-image: url(../img/icons/star-grey.png);
+    width: 44px;
+}
+
+.icon-magic-wand {
+    background-image: url(../img/icons/magic-wand.png);
+    width: 39px;
+}
+
+.icon-paint-bucket {
+    background-image: url(../img/icons/paint-bucket.png);
+    width: 43px;
+}
+
+.name-competence {
+    font-family: 'Montseratt Medium';
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.descr-competence {
+    color: #787878;
+    font-family: 'Nunito Sans Regular';
+    font-size: 16px;
+    line-height: 24px;
+    white-space: pre-line;
+}
+
+
+
+.testimonials {
+    background-color: #10c9c3;
+    padding-top: 178px;
+    padding-bottom: 60px;
+    text-align: center;
+    color: white;
+}
+
+.text-review {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: 'Montseratt Medium';
+    white-space: pre-line;
+}
+
+.wrote {
+    font-size: 12px;
+    line-height: 36px;
+    font-family: 'Montseratt Medium';
+    text-transform: uppercase;
+}
+
+.list-pagination {
+    display: flex;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 110px;
+    width: 40px;
+}
+
+.pagination-item {
+    background-color: #b0e8e6;
+    width: 6px;
+    height: 6px;
+    margin-right: 9px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pagination-item:last-child {
+    margin-right: 0;
+}
+
+.pagination-active {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+}
+
+
+
+.clients {
+    padding: 64px 0;
+}
+
+.container-clients-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-client {
+    height: 72px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-handmade {
+    width: 89px;
+    background-image: url(../img/icons/logo-handmade.png);
+}
+
+.logo-montain  {
+    width: 98px;
+    background-image: url(../img/icons/logo-montain.png);
+}
+
+.logo-collection {
+    width: 127px;
+    background-image: url(../img/icons/logo-collection.png);
+}
+
+.logo-mountainbike {
+    width: 96px;
+    background-image: url(../img/icons/logo-mountainbike.png);
+}
+
+
+
+.order-project {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+}
+
+.form-order {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 672px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.field:first-child {
+    margin-right: 32px;
+}
+
+.field {
+    width: 320px;
+    background-color: white;
+    padding: 18px 20px;
+    margin-bottom: 30px;
+    color: #787878;
+    font-size: 15px;
+    font-family: 'Nunito Sans Regular';
+}
+
+.field-100 {
+    width: 100%;
+}
+
+.btn-send {
+    margin: 0;
+    cursor: pointer;
+}

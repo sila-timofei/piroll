@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piroll - Contact</title>
+    <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <script src="https://api-maps.yandex.ru/2.1/?load=package.standard&amp;lang=ru-RU"></script>
+</head>
+<body class="document">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="logo"></div>
+
+                <nav class="link-menu">
+                    <a href="home.html" class="link-menu-item">home</a>
+                    <a href="about.html" class="link-menu-item">about</a>
+                    <a href="#" class="link-menu-item active-menu">contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="contact-info">
+                    <h1 class="title">
+                        Contact Info:
+                    </h1>
+    
+                    <p class="descr">To give give beginning divide, cattle. Give moving 
+                        won't, there the abundantly she'd she'd brought air 
+                        upon. Light hath subdue. Life days creature upon 
+                        first heaven gathering dry.
+                    </p>
+
+                    <address class="location">
+                        <span>Address:</span>  10111 Santa Monica Boulevard, LA
+                    </address>
+
+                    <number class="tel">
+                        <span>Phone:</span>  +44 987 065 908
+                    </number>
+
+                    <Email class="email">
+                        <span>Email:</span>  info@Example.com
+                    </Email>
+
+                    <fax class="fax">
+                       <span>Fax:</span>  +44 987 065 909
+                    </fax>
+                </div>
+
+                <form action="#" class="form-order">
+                    <input type="text" class="field" placeholder="Your Name">
+                    <input type="text" class="field" placeholder="Your Email">
+                    <input type="text" class="field field-100" placeholder="Your Title">
+                    <textarea cols="50"  class="field field-100" placeholder="Your Comment" rows="10"></textarea>
+    
+                    <button type="submit" class="btn btn-send">
+                        send message
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container">
+            
+            <div class="map" id="map">
+                <div class="blackout"></>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="row-element">
+                    <div class="name-studio">
+                        Piroll Design, Inc.
+                    </div>
+    
+                    <div class="copyter">© 2017 Piroll. All rights reserved.
+                        Designed by robirurk.
+                    </div>
+                </div>
+
+                <div class="row-element">
+                    <Email class="mail">
+                        hello@pirolltheme.com
+                    </Email>
+                    <br>
+                    <tel class="number">
+                        +44 987 065 908
+                    </tel>
+                </div>
+
+                <ol class="footer-list">
+                    <a href="#" class="link-footer-list">Project</a>
+                    <a href="#" class="link-footer-list">About</a>
+                    <a href="#" class="link-footer-list">Services</a>
+                    <a href="#" class="link-footer-list">Career</a>
+                </ol>
+
+                <ol class="footer-list">
+                    <a href="#" class="link-footer-list">News</a>
+                    <a href="#" class="link-footer-list">Events</a>
+                    <a href="#" class="link-footer-list">Contact</a>
+                    <a href="#" class="link-footer-list">Legals</a>
+                </ol>
+
+                <ol class="footer-list">
+                    <a href="#" class="link-footer-list">Facebook</a>
+                    <a href="#" class="link-footer-list">Twitter</a>
+                    <a href="#" class="link-footer-list">Instagram</a>
+                    <a href="#" class="link-footer-list">Dribble</a>
+                </ol>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        ymaps.ready(init);
+
+        function init() {
+            var coords = [34.080832,-118.389744],
+                map = new ymaps.Map("map", { center: coords, zoom: 15, controls: [] });
+
+            map.geoObjects.add(new ymaps.Placemark(coords, { iconCaption: '' }, { iconColor: "#0a0a0a" }));
+            map.behaviors.disable("scrollZoom");
+        }
+    </script>
+</body>
+</html>

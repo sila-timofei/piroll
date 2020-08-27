@@ -4,6 +4,9 @@
 /* mobile + tablet */
 @media screen and (max-width:940px){
   
+	.container {
+		padding: 0 30px;
+	}
 	.desktop{display:none!important;}
 
 	.scrollbox{overflow:auto;overflow:-moz-scrollbars-none!important;}

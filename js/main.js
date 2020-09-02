@@ -1,8 +1,11 @@
 window.addEventListener('DOMContentLoaded', function() {
     const text = document.querySelectorAll('.text-review'),
           dots = document.querySelectorAll('.pagination-item'),
-          wroteRewiews = document.querySelectorAll('.wrote');
+          wroteRewiews = document.querySelectorAll('.wrote'),
+          btnMenu = document.querySelector('.btn-menu'),
+          menu = document.querySelector('.link-menu');
 
+    //slider reviews
     function hideText() {
         text.forEach(text => {
             text.classList.remove('show');
@@ -40,5 +43,12 @@ window.addEventListener('DOMContentLoaded', function() {
         changeActivePagination();
         hideText();
         changeClass(2);
+    });
+
+
+    //menu
+    btnMenu.addEventListener('click', () => {
+        menu.classList.toggle('show-menu');
+        btnMenu.classList.toggle('inclineMenu');
     });
 });

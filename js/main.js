@@ -3,7 +3,10 @@ window.addEventListener('DOMContentLoaded', function() {
           dots = document.querySelectorAll('.pagination-item'),
           wroteRewiews = document.querySelectorAll('.wrote'),
           btnMenu = document.querySelector('.btn-menu'),
-          menu = document.querySelector('.link-menu');
+          menu = document.querySelector('.link-menu'),
+          btnPlay = document.querySelector('.btn-play'),
+          pause = document.querySelector('.pause'),
+          play = document.querySelector('.play');
 
     //slider reviews
     function hideText() {
@@ -50,5 +53,16 @@ window.addEventListener('DOMContentLoaded', function() {
     btnMenu.addEventListener('click', () => {
         menu.classList.toggle('show-menu');
         btnMenu.classList.toggle('inclineMenu');
+        if (btnMenu.classList.contains('inclineMenu')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    });
+
+
+    btnPlay.addEventListener('click', () => {
+        pause.classList.toggle('hide-icon');
+        play.classList.toggle('show-icon');
     });
 });

@@ -130,11 +130,17 @@ body {
 }
 
 
+@media screen and (max-width:1170px) {
+	.container {
+		padding: 0 30px;
+    }
+}
 
 /* mobile + tablet */
 @media screen and (max-width:940px) {
     .btn-menu {
         position: relative;
+        z-index: 2;
         width: 30px;
         height: 2px;
         background-color: black;
@@ -175,6 +181,7 @@ body {
         background-color: #e2e1e1;
         margin-left: -100%;
         overflow: auto;
+        z-index: 1;
     }
 
     .link-menu-item:first-child {

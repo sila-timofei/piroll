@@ -136,3 +136,55 @@ img{display: block;width:100%;max-width:100%;}
 .project12 {
     background-color: #f3f0ea;
 }
+
+
+@media screen and (max-width:940px){
+	.project {
+		width: 33.33333333333333%;
+	}
+
+	.desktop{display:none!important;}
+
+	.scrollbox{overflow:auto;overflow:-moz-scrollbars-none!important;}
+  	.scrollbox::-webkit-scrollbar{display:none;}
+}
+
+/* desktop */    
+@media screen and (min-width:941px){
+
+    .mobile{display:none!important;}
+}
+
+@media screen and (max-width:640px){
+    .main-wrapper {
+        padding-top: 50px;
+    }
+
+    .tiles-project {
+        margin-top: 50px;
+    }
+
+    .descr {
+        white-space: normal;
+        margin: 0 30px;
+    }
+
+    .title {
+       margin-left: 30px;
+       margin-right: 30px; 
+    }
+
+	.project {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width:400px){
+	.title {
+		font-size: 30px;
+	}
+
+	.project {
+		width: 100%;
+	}
+}

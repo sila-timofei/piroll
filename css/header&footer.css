@@ -36,7 +36,6 @@ body {
 .row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 38px 0;
 }
 
@@ -144,6 +143,7 @@ body {
         width: 30px;
         height: 2px;
         background-color: black;
+        margin-top: 4.5px;
     }
 
     .btn-menu::before {
@@ -196,6 +196,12 @@ body {
         margin-bottom: 30px;
         margin-right: 0;
     }
+}
+
+/* desktop */    
+@media screen and (min-width:941px){
+
+    .mobile{display:none!important;}
 }
 
 @media screen and (max-width:640px) {

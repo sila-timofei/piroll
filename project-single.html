@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Piroll - Projects | Light Breakfast</title>
-    <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/project-single.css">
-    <link rel="stylesheet" href="css/header&footer.css">
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/project-single.css"/>
+    <link rel="stylesheet" href="css/header&footer.css"/>
+    <link rel="stylesheet" href="css/fonts.css"/>
 </head>
 <body class="document">
     <header>
@@ -20,6 +20,8 @@
                     <a href="about.html" class="link-menu-item">about</a>
                     <a href="contact.html" class="link-menu-item">contact</a>
                 </nav>
+
+                <div class="btn-menu mobile"></div>
             </div>
         </div>
     </header>
@@ -32,6 +34,8 @@
                         <h1 class="title">
                             Light Breakfast
                         </h1>
+
+                        <div class="cover-project mobile"></div>
     
                         <p class="descr">Light his can't a creeping. Be, bring blessed night. Replenish
                             blessed creature good. Saw earth every creepeth lights day,
@@ -121,5 +125,26 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        //menu
+        btnMenu = document.querySelector('.btn-menu'),
+        menu = document.querySelector('.link-menu'),
+
+        btnMenu.addEventListener('click', () => {
+            menu.classList.toggle('show-menu');
+            btnMenu.classList.toggle('inclineMenu');
+            if (btnMenu.classList.contains('inclineMenu')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+
+        btnPlay.addEventListener('click', () => {
+            pause.classList.toggle('hide-icon');
+            play.classList.toggle('show-icon');
+        });
+    </script>
 </body>
 </html>

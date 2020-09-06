@@ -90,6 +90,9 @@ img{display: block;width:100%;max-width:100%;}
 
 .about-project .row {
     padding: 42px 0;
+}
+
+.container-control {
     background-color: white;
 }
 
@@ -174,5 +177,13 @@ img{display: block;width:100%;max-width:100%;}
 @media screen and (max-width:400px) {
     .cover-project {
         height: 300px;
+    }
+
+    .prev .prev-text, .next .prev-text { 
+        display: none;
+    }
+
+    .arrow-left,.arrow-right {
+        margin: 0;
     }
 }

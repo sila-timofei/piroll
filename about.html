@@ -20,6 +20,8 @@
                     <a href="#" class="link-menu-item active-menu">about</a>
                     <a href="contact.html" class="link-menu-item">contact</a>
                 </nav>
+
+                <div class="btn-menu mobile"></div>
             </div>
         </div>
     </header>
@@ -156,5 +158,26 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        //menu
+        btnMenu = document.querySelector('.btn-menu'),
+        menu = document.querySelector('.link-menu'),
+
+        btnMenu.addEventListener('click', () => {
+            menu.classList.toggle('show-menu');
+            btnMenu.classList.toggle('inclineMenu');
+            if (btnMenu.classList.contains('inclineMenu')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+
+        btnPlay.addEventListener('click', () => {
+            pause.classList.toggle('hide-icon');
+            play.classList.toggle('show-icon');
+        });
+    </script>
 </body>
 </html>

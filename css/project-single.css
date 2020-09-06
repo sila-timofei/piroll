@@ -175,6 +175,10 @@ img{display: block;width:100%;max-width:100%;}
 }
 
 @media screen and (max-width:400px) {
+    .title {
+        font-size: 30px;
+    }
+
     .cover-project {
         height: 300px;
     }

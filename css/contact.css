@@ -135,3 +135,54 @@ body {
     height: 100%;
     z-index: 2;
 }
+
+
+
+@media screen and (max-width:1170px) {
+    .form-order {
+        width: 50%;
+    }
+
+    .field {
+        width: 100%;
+    }
+
+    .field:first-child {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:940px) {
+    .contact-info {
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    .descr {
+        white-space: normal;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .main-wrapper {
+        padding: 50px 0;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .form-order {
+        width: 100%;
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .field {
+        text-align: center;
+    }
+
+    .map {
+        margin-top: 50px;
+    }
+}

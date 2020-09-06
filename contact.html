@@ -21,6 +21,8 @@
                     <a href="about.html" class="link-menu-item">about</a>
                     <a href="#" class="link-menu-item active-menu">contact</a>
                 </nav>
+
+                <div class="btn-menu mobile"></div>
             </div>
         </div>
     </header>
@@ -134,6 +136,27 @@
             map.geoObjects.add(new ymaps.Placemark(coords, { iconCaption: '' }, { iconColor: "#0a0a0a" }));
             map.behaviors.disable("scrollZoom");
         }
+    </script>
+
+    <script>
+        //menu
+        btnMenu = document.querySelector('.btn-menu'),
+        menu = document.querySelector('.link-menu'),
+
+        btnMenu.addEventListener('click', () => {
+            menu.classList.toggle('show-menu');
+            btnMenu.classList.toggle('inclineMenu');
+            if (btnMenu.classList.contains('inclineMenu')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+
+        btnPlay.addEventListener('click', () => {
+            pause.classList.toggle('hide-icon');
+            play.classList.toggle('show-icon');
+        });
     </script>
 </body>
 </html>

@@ -49,13 +49,10 @@ img{display: block;width:100%;max-width:100%;}
     white-space: pre-line;
 }
 
-.about-project {
-    background-color: #f6f6f6;
-}
-
 .project {
     position: relative;
     overflow: hidden;
+    background-color: #f6f6f6;
 }
 
 .project::after {
@@ -90,10 +87,6 @@ img{display: block;width:100%;max-width:100%;}
 
 .about-project .row {
     padding: 42px 0;
-}
-
-.container-control {
-    background-color: white;
 }
 
 .row-controls div {

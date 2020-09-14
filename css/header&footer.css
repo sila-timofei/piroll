@@ -111,6 +111,14 @@ body {
     font-family: 'Work Sans Regular';
 }
 
+.number:hover {
+    color: white;
+}
+
+.mail:hover {
+    color: white;
+}
+
 .copyter,.mail,.number,.link-footer-list {
     line-height: 24px;
     font-size: 15px;
